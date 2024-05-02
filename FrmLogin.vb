@@ -36,12 +36,7 @@ Public Class FrmLogin
                 End If
             Else
                 RD.Close()
-                If tusername.Text = "masgie" And tPassword.Text = "123" Then
-                    nikAdmin = "SuperUser"
-                    Dim FR As New FrmMenu
-                    FR.Show()
-                    Me.Hide()
-                Else
+              
                     MsgBox("Username / Password Salah!", vbCritical, "Peringatan")
                 End If
             End If
