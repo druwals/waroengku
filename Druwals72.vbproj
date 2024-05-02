@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props" Condition="Exists('packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1285050C-34CE-4119-80E2-1A70D125197B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Druwals72.My.MyApplication</StartupObject>
+    <RootNamespace>Druwals72</RootNamespace>
+    <AssemblyName>Druwals72</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Druwals72.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Druwals72.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.160.1000.6\lib\net462\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net48\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net48\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAdmin.Designer.vb">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBarang.Designer.vb">
+      <DependentUpon>FrmBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBarcode.Designer.vb">
+      <DependentUpon>FrmBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBrgKeluar.Designer.vb">
+      <DependentUpon>FrmBrgKeluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBrgKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHakAkses.Designer.vb">
+      <DependentUpon>FrmHakAkses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHakAkses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKaryawan.Designer.vb">
+      <DependentUpon>FrmKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKoneksi.Designer.vb">
+      <DependentUpon>FrmKoneksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKoneksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLaporan.Designer.vb">
+      <DependentUpon>FrmLaporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLaporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLapStok.Designer.vb">
+      <DependentUpon>FrmLapStok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLapStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasuk.Designer.vb">
+      <DependentUpon>FrmMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPengaturan.Designer.vb">
+      <DependentUpon>FrmPengaturan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPengaturan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPreview.Designer.vb">
+      <DependentUpon>FrmPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTentang.Designer.vb">
+      <DependentUpon>FrmTentang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTentang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrAdmin.Designer.vb">
+      <DependentUpon>FrmTrAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTrAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransKasir.Designer.vb">
+      <DependentUpon>FrmTransKasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransKasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KonekData.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="print_microsoft_report.vb" />
+    <Compile Include="RPT_MASUK.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_MASUK.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TOKODataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TOKODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TOKODataSet.vb">
+      <DependentUpon>TOKODataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBarang.resx">
+      <DependentUpon>FrmBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBarcode.resx">
+      <DependentUpon>FrmBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBrgKeluar.resx">
+      <DependentUpon>FrmBrgKeluar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHakAkses.resx">
+      <DependentUpon>FrmHakAkses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKaryawan.resx">
+      <DependentUpon>FrmKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKoneksi.resx">
+      <DependentUpon>FrmKoneksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLaporan.resx">
+      <DependentUpon>FrmLaporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLapStok.resx">
+      <DependentUpon>FrmLapStok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasuk.resx">
+      <DependentUpon>FrmMasuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPengaturan.resx">
+      <DependentUpon>FrmPengaturan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPreview.resx">
+      <DependentUpon>FrmPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTentang.resx">
+      <DependentUpon>FrmTentang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrAdmin.resx">
+      <DependentUpon>FrmTrAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransKasir.resx">
+      <DependentUpon>FrmTransKasir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabelBarcode.rdlc" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSTOK.rdlc" />
+    <EmbeddedResource Include="RPT_MASUK.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_MASUK.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRKasir.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="TOKODataSet.xsc">
+      <DependentUpon>TOKODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TOKODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TOKODataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TOKODataSet.xss">
+      <DependentUpon>TOKODataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laporan24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pengaturan24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kelua24r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafik24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\android-printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suppl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memo24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOS ADMIN24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalender24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warungkulogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgaplikasi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orang24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savew24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sapu24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cari161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silang16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blok16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalender16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fgaga16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acount24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmbk24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft-Excel-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cent1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.SqlServer.Types.160.1000.6\build\net462\Microsoft.SqlServer.Types.props'))" />
+  </Target>
+</Project>
